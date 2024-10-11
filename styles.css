@@ -1,0 +1,70 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #1b1612; /*dark background*/
+  text-align: center;
+  color: #b87633; /*gold text color*/
+  padding: 20px; /*added padding for better spacing*/
+  border: 30px solid #898275; /*border around the body*/
+  border-radius: 40px; /*rounded corners biar makin clean*/
+  background: linear-gradient(#1b1612, #b87633); /*gradient background (really cool)*/
+}
+
+/*custom tag styles*/
+skibidi {
+  display: block; /*ensure it behaves like a block element*/
+  text-align: center;
+  border: 10px ridge #898275; /*ridge border*/
+  margin: 20px 0; /*added margin for spacing*/
+  padding: 10px; /*added padding for content inside*/
+}
+
+/*menu item styles*/
+li {
+  border: 10px ridge #898275; /*ridge border for list items */
+  margin: 10px 0; /*spacing between items*/
+  padding: 10px; /*padding inside each list item*/
+  transition: background-color 0.3s; /*smooth background change*/
+}
+
+li:hover {
+  background-color: rgba(184, 118, 51, 0.2); /*highlight on hover*/
+}
+
+hr.dotted-line {
+  border: none;
+  border-top: 2px dotted #b87633; /*color of the dotted line*/
+  margin: 30px 0; /*spacing above and below*/
+  width: 100%; /*responsive width*/
+  max-width: 1050px; /*max width for larger screens*/
+  margin-left: auto; /*center the line*/
+  margin-right: auto; /*center the line*/
+}
+
+/*link styles*/
+a {
+  color: #b87633; /*link color*/
+  text-decoration: none; /*removing the underline*/
+  transition: color 0.3s; /*smoothen color change with transition*/
+}
+
+a:hover {
+  color: #f4c542; /*change color on hover so the change is visible*/
+}
+
+/*responsiveness (interactiveness) styles*/
+@media (max-width: 600px) {
+  body {
+      padding: 10px; /*less padding on smaller screens*/
+  }
+
+  skibidi {
+      font-size: 1.2em; /*increase font size*/
+  }
+
+  li {
+      font-size: 1em; /*adjust list item font size*/
+  }
+}
+
+/*so basically all i did for the interactiveness is just making adaptability for the font sizes
+so that the font sizes will not be too big for smaller screens like mobile phones*/
